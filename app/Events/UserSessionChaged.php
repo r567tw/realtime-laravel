@@ -34,6 +34,9 @@ class UserSessionChaged implements ShouldBroadcast
      */
     public function broadcastOn()
     {
+        \Log::info($this->message);
+        \Log::info($this->type);
+
         return new Channel('notifications');
     }
 }
