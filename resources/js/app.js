@@ -1,6 +1,6 @@
 require('./bootstrap');
 
-Echo.channel("notifications")
+Echo.private("notifications")
     .listen("UserSessionChaged",(e)=>{
         const notificationEl = document.getElementById("notification")
         console.log(e)

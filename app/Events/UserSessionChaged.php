@@ -37,6 +37,6 @@ class UserSessionChaged implements ShouldBroadcast
         \Log::info($this->message);
         \Log::info($this->type);
 
-        return new Channel('notifications');
+        return new PrivateChannel('notifications');
     }
 }
