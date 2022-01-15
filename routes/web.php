@@ -23,3 +23,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/test-pusher', function(){
     return view("test");
 })->name('pusher-test');
+
+Route::view('users','users.all');
